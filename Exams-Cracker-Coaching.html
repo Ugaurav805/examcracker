@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exams Cracker - India's Leading Coaching Institute</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#4f46e5',secondary:'#f59e0b'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+body {
+font-family: 'Inter', sans-serif;
+}
+.glass {
+background: rgba(255, 255, 255, 0.7);
+backdrop-filter: blur(10px);
+border: 1px solid rgba(255, 255, 255, 0.2);
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+.glass-card {
+background: rgba(255, 255, 255, 0.85);
+backdrop-filter: blur(10px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+input:focus, select:focus, textarea:focus {
+outline: none;
+border-color: #4f46e5;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+.custom-checkbox {
+position: relative;
+display: inline-block;
+width: 20px;
+height: 20px;
+}
+.custom-checkbox input {
+opacity: 0;
+width: 0;
+height: 0;
+}
+.checkmark {
+position: absolute;
+top: 0;
+left: 0;
+width: 20px;
+height: 20px;
+background-color: #fff;
+border: 2px solid #d1d5db;
+border-radius: 4px;
+}
+.custom-checkbox input:checked ~ .checkmark {
+background-color: #4f46e5;
+border-color: #4f46e5;
+}
+.checkmark:after {
+content: "";
+position: absolute;
+display: none;
+}
+.custom-checkbox input:checked ~ .checkmark:after {
+display: block;
+}
+.custom-checkbox .checkmark:after {
+left: 6px;
+top: 2px;
+width: 6px;
+height: 12px;
+border: solid white;
+border-width: 0 2px 2px 0;
+transform: rotate(45deg);
+}
+.switch {
+position: relative;
+display: inline-block;
+width: 44px;
+height: 24px;
+}
+.switch input {
+opacity: 0;
+width: 0;
+height: 0;
+}
+.slider {
+position: absolute;
+cursor: pointer;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: #e5e7eb;
+transition: .4s;
+border-radius: 24px;
+}
+.slider:before {
+position: absolute;
+content: "";
+height: 18px;
+width: 18px;
+left: 3px;
+bottom: 3px;
+background-color: white;
+transition: .4s;
+border-radius: 50%;
+}
+input:checked + .slider {
+background-color: #4f46e5;
+}
+input:checked + .slider:before {
+transform: translateX(20px);
+}
+.tab-active {
+color: #4f46e5;
+border-bottom: 2px solid #4f46e5;
+}
+.faq-accordion-content {
+max-height: 0;
+overflow: hidden;
+transition: max-height 0.3s ease-out;
+}
+.faq-accordion-content.active {
+max-height: 500px;
+}
+.faq-accordion-icon {
+transition: transform 0.3s ease;
+}
+.faq-accordion-icon.active {
+transform: rotate(180deg);
+}
+</style>
+</head>
+<body class="bg-gray-50">
+<!-- Header Section -->
+<header class="fixed top-0 left-0 right-0 z-50 glass">
+<div class="container mx-auto px-4">
+<div class="flex items-center justify-between py-2 text-xs text-gray-600">
+<div class="flex items-center gap-6">
+<div class="flex items-center gap-2">
+<div class="w-4 h-4 flex items-center justify-center">
+<i class="ri-phone-line"></i>
+</div>
+<span>+91 9876543210</span>
+</div>
+<div class="flex items-center gap-2">
+<div class="w-4 h-4 flex items-center justify-center">
+<i class="ri-mail-line"></i>
+</div>
+<span>info@examscracker.com</span>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<a href="#" class="hover:text-primary">
+<div class="w-5 h-5 flex items-center justify-center">
+<i class="ri-facebook-fill"></i>
+</div>
+</a>
+<a href="#" class="hover:text-primary">
+<div class="w-5 h-5 flex items-center justify-center">
+<i class="ri-instagram-line"></i>
+</div>
+</a>
+<a href="#" class="hover:text-primary">
+<div class="w-5 h-5 flex items-center justify-center">
+<i class="ri-youtube-line"></i>
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="border-b border-gray-200"></div>
+<div class="container mx-auto px-4">
+<div class="flex items-center justify-between py-4">
+<div class="flex items-center gap-12">
+<a href="#" class="text-2xl font-['Pacifico'] text-primary">Exams Cracker</a>
+<nav class="hidden lg:flex items-center gap-8">
+<a href="#" class="font-medium text-gray-900 hover:text-primary">Home</a>
+<a href="#courses" class="font-medium text-gray-900 hover:text-primary">Courses</a>
+<a href="#faculty" class="font-medium text-gray-900 hover:text-primary">Faculty</a>
+<a href="#resources" class="font-medium text-gray-900 hover:text-primary">Resources</a>
+<a href="#admissions" class="font-medium text-gray-900 hover:text-primary">Admissions</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<a href="#counseling" class="hidden md:block px-4 py-2 text-primary border border-primary rounded-button hover:bg-primary hover:text-white transition duration-300 whitespace-nowrap">Book Free Counseling</a>
+<a href="#trial" class="hidden md:block px-4 py-2 bg-primary text-white rounded-button hover:bg-indigo-600 transition duration-300 whitespace-nowrap">Try Free Class</a>
+<button class="lg:hidden w-10 h-10 flex items-center justify-center">
+<i class="ri-menu-line text-xl"></i>
+</button>
+</div>
+</div>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="pt-32 pb-16 relative overflow-hidden">
+<div style="background-image: url('https://readdy.ai/api/search-image?query=A%20modern%20educational%20environment%20with%20happy%20diverse%20Indian%20students%20in%20a%20classroom%20with%20digital%20technology%2C%20teachers%20helping%20students%2C%20glass%20partitions%2C%20modern%20educational%20equipment%2C%20bright%20and%20airy%20space%2C%20subtle%20glass%20morphism%20effect%2C%20clean%20and%20professional%20atmosphere&width=1920&height=1080&seq=1&orientation=landscape'); background-size: cover; background-position: center;" class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-r from-white via-white/90 to-white/20"></div>
+</div>
+<div class="container mx-auto px-4 relative z-10">
+<div class="grid md:grid-cols-2 gap-8 items-center">
+<div class="max-w-xl">
+<div class="flex gap-3 mb-6">
+<span class="px-3 py-1 bg-indigo-100 text-primary rounded-full text-sm font-medium">Online Classes</span>
+<span class="px-3 py-1 bg-indigo-100 text-primary rounded-full text-sm font-medium">Offline Classes</span>
+</div>
+<h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">Crack Your Dreams With India's Leading Institute</h1>
+<p class="text-xl text-gray-700 mb-8">Expert Guidance for NEET, JEE & Services Exams with personalized attention and proven results.</p>
+<div class="flex flex-wrap gap-4 mb-8">
+<a href="#counseling" class="px-6 py-3 bg-primary text-white rounded-button hover:bg-indigo-600 transition duration-300 font-medium whitespace-nowrap">Book Free Counseling</a>
+<a href="#trial" class="px-6 py-3 border border-primary text-primary rounded-button hover:bg-primary hover:text-white transition duration-300 font-medium whitespace-nowrap">Try Free Class</a>
+</div>
+<div class="flex flex-wrap gap-8 mt-8">
+<div class="text-center">
+<div class="text-3xl font-bold text-primary mb-1">10,000+</div>
+<div class="text-sm text-gray-600">Success Stories</div>
+</div>
+<div class="text-center">
+<div class="text-3xl font-bold text-primary mb-1">100+</div>
+<div class="text-sm text-gray-600">Expert Faculty</div>
+</div>
+<div class="text-center">
+<div class="text-3xl font-bold text-primary mb-1">15+</div>
+<div class="text-sm text-gray-600">Years Experience</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Course Offerings -->
+<section id="courses" class="py-16 bg-white">
+<div class="container mx-auto px-4">
+<div class="text-center max-w-3xl mx-auto mb-12">
+<h2 class="text-3xl font-bold text-gray-900 mb-4">Our Comprehensive Course Offerings</h2>
+<p class="text-lg text-gray-600">Tailored programs designed to help students excel in academics and competitive exams</p>
+</div>
+<div class="flex justify-center mb-8">
+<div class="inline-flex rounded-full p-1 bg-gray-100">
+<button id="all-courses-btn" class="px-4 py-2 rounded-full bg-primary text-white font-medium whitespace-nowrap">All Courses</button>
+<button id="online-courses-btn" class="px-4 py-2 rounded-full text-gray-700 font-medium hover:bg-gray-200 transition whitespace-nowrap">Online</button>
+<button id="offline-courses-btn" class="px-4 py-2 rounded-full text-gray-700 font-medium hover:bg-gray-200 transition whitespace-nowrap">Offline</button>
+</div>
+</div>
+<div id="courses-grid" class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- School Education -->
+<div class="glass-card rounded-lg overflow-hidden transition-transform hover:scale-105">
+<div class="h-48 bg-indigo-50 flex items-center justify-center">
+<div class="w-24 h-24 flex items-center justify-center">
+<i class="ri-book-open-line ri-3x text-primary"></i>
+</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-semibold text-gray-900 mb-2">School Education</h3>
+<p class="text-gray-600 mb-4">Comprehensive programs for students from grades 6 to 12, covering all major boards (CBSE, ICSE, State Boards)</p>
+<a href="#" class="inline-flex items-center text-primary font-medium">
+Learn More
+<div class="w-5 h-5 flex items-center justify-center ml-1">
+<i class="ri-arrow-right-line"></i>
+</div>
+</a>
+</div>
+</div>
+<!-- NEET Preparation -->
+<div class="glass-card rounded-lg overflow-hidden transition-transform hover:scale-105">
+<div class="h-48 bg-indigo-50 flex items-center justify-center">
+<div class="w-24 h-24 flex items-center justify-center">
+<i class="ri-microscope-line ri-3x text-primary"></i>
+</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-semibold text-gray-900 mb-2">NEET Preparation</h3>
+<p class="text-gray-600 mb-4">Specialized coaching for medical entrance exams with focus on Biology, Physics, and Chemistry with regular mock tests</p>
+<a href="#" class="inline-flex items-center text-primary font-medium">
+Learn More
+<div class="w-5 h-5 flex items-center justify-center ml-1">
+<i class="ri-arrow-right-line"></i>
+</div>
+</a>
+</div>
+</div>
+<!-- JEE Preparation -->
+<div class="glass-card rounded-lg overflow-hidden transition-transform hover:scale-105">
+<div class="h-48 bg-indigo-50 flex items-center justify-center">
+<div class="w-24 h-24 flex items-center justify-center">
+<i class="ri-compasses-2-line ri-3x text-primary"></i>
+</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-semibold text-gray-900 mb-2">JEE Preparation</h3>
+<p class="text-gray-600 mb-4">Intensive training for engineering entrance exams with advanced problem-solving techniques and concept clarity</p>
+<a href="#" class="inline-flex items-center text-primary font-medium">
+Learn More
+<div class="w-5 h-5 flex items-center justify-center ml-1">
+<i class="ri-arrow-right-line"></i>
+</div>
+</a>
+</div>
+</div>
+<!-- Services Exams -->
+<div class="glass-card rounded-lg overflow-hidden transition-transform hover:scale-105">
+<div class="h-48 bg-indigo-50 flex items-center justify-center">
+<div class="w-24 h-24 flex items-center justify-center">
+<i class="ri-government-line ri-3x text-primary"></i>
+</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-semibold text-gray-900 mb-2">Services Exams</h3>
+<p class="text-gray-600 mb-4">Preparation for UPSC, SSC, Banking and other government services with current affairs and test series</p>
+<a href="#" class="inline-flex items-center text-primary font-medium">
+Learn More
+<div class="w-5 h-5 flex items-center justify-center ml-1">
+<i class="ri-arrow-right-line"></i>
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="text-center mt-10">
+<a href="https://readdy.ai/home/77e26a66-d421-464c-b32c-eeb07cb950c6/d10bcaae-adbb-4e91-a1f7-9f066cb3c668" data-readdy="true" class="px-6 py-3 bg-primary text-white rounded-button hover:bg-indigo-600 transition duration-300 font-medium whitespace-nowrap">View All Courses</a>
+</div>
+</div>
+</section>
+<!-- Why Choose Us -->
+<section class="py-16 bg-gray-50">
+<div class="container mx-auto px-4">
+<div class="grid md:grid-cols-2 gap-12 items-center">
+<div>
+<h2 class="text-3xl font-bold text-gray-900 mb-6">Why Choose Exams Cracker?</h2>
+<p class="text-lg text-gray-600 mb-8">At Exams Cracker, we believe in a holistic approach to education that goes beyond textbooks and rote learning. Our methodology focuses on building a strong conceptual foundation while developing critical thinking and problem-solving skills.</p>
+<div class="mb-8">
+<div class="flex items-center gap-2 mb-2">
+<div class="w-5 h-5 flex items-center justify-center text-primary">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-700 font-medium">Proven track record of 15+ years</span>
+</div>
+<div class="flex items-center gap-2 mb-2">
+<div class="w-5 h-5 flex items-center justify-center text-primary">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-700 font-medium">Comprehensive study materials and resources</span>
+</div>
+<div class="flex items-center gap-2">
+<div class="w-5 h-5 flex items-center justify-center text-primary">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-700 font-medium">Continuous assessment and feedback system</span>
+</div>
+</div>
+<a href="#" class="inline-flex items-center text-primary font-medium">
+Learn more about our methodology
+<div class="w-5 h-5 flex items-center justify-center ml-1">
+<i class="ri-arrow-right-line"></i>
+</div>
+</a>
+</div>
+<div class="grid grid-cols-2 gap-6">
+<div class="glass-card p-6 rounded-lg">
+<div class="w-12 h-12 flex items-center justify-center bg-indigo-100 rounded-full mb-4 text-primary">
+<i class="ri-user-star-line ri-lg"></i>
+</div>
+<h3 class="text-lg font-semibold text-gray-900 mb-2">Experienced Faculty</h3>
+<p class="text-gray-600">Learn from subject matter experts with years of teaching experience</p>
+</div>
+<div class="glass-card p-6 rounded-lg">
+<div class="w-12 h-12 flex items-center justify-center bg-indigo-100 rounded-full mb-4 text-primary">
+<i class="ri-focus-3-line ri-lg"></i>
+</div>
+<h3 class="text-lg font-semibold text-gray-900 mb-2">Personalized Attention</h3>
+<p class="text-gray-600">Small batch sizes ensure individual attention to each student</p>
+</div>
+<div class="glass-card p-6 rounded-lg">
+<div class="w-12 h-12 flex items-center justify-center bg-indigo-100 rounded-full mb-4 text-primary">
+<i class="ri-road-map-line ri-lg"></i>
+</div>
+<h3 class="text-lg font-semibold text-gray-900 mb-2">Structured Learning</h3>
+<p class="text-gray-600">Well-planned curriculum with regular milestones and assessments</p>
+</div>
+<div class="glass-card p-6 rounded-lg">
+<div class="w-12 h-12 flex items-center justify-center bg-indigo-100 rounded-full mb-4 text-primary">
+<i class="ri-question-answer-line ri-lg"></i>
+</div>
+<h3 class="text-lg font-semibold text-gray-900 mb-2">Doubt Clearing</h3>
+<p class="text-gray-600">Dedicated sessions to address student queries and difficulties</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Us VS Others -->
+<section class="py-16 bg-white">
+<div class="container mx-auto px-4">
+<div class="text-center max-w-3xl mx-auto mb-12">
+<h2 class="text-3xl font-bold text-gray-900 mb-4">How We Compare</h2>
+<p class="text-lg text-gray-600">See why thousands of students and parents choose Exams Cracker over other coaching institutes</p>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full glass-card rounded-lg">
+<thead>
+<tr class="border-b border-gray-200">
+<th class="px-6 py-4 text-left text-gray-600 font-medium">Comparison Points</th>
+<th class="px-6 py-4 text-center bg-indigo-50 text-primary font-semibold">Exams Cracker</th>
+<th class="px-6 py-4 text-center text-gray-600 font-medium">Other Institutes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="border-b border-gray-200">
+<td class="px-6 py-4 text-gray-700 font-medium">Teaching Methodology</td>
+<td class="px-6 py-4 text-center bg-indigo-50">
+<div class="flex items-center justify-center gap-2">
+<span>Concept-based learning with practical applications</span>
+<div class="w-5 h-5 flex items-center justify-center text-green-500">
+<i class="ri-check-line"></i>
+</div>
+</div>
+</td>
+<td class="px-6 py-4 text-center text-gray-600">Mostly theoretical with limited practical exposure</td>
+</tr>
+<tr class="border-b border-gray-200">
+<td class="px-6 py-4 text-gray-700 font-medium">Faculty Experience</td>
+<td class="px-6 py-4 text-center bg-indigo-50">
+<div class="flex items-center justify-center gap-2">
+<span>Minimum 8+ years of teaching experience</span>
+<div class="w-5 h-5 flex items-center justify-center text-green-500">
+<i class="ri-check-line"></i>
+</div>
+</div>
+</td>
+<td class="px-6 py-4 text-center text-gray-600">Varies widely, often less experienced</td>
+</tr>
+<tr class="border-b border-gray-200">
+<td class="px-6 py-4 text-gray-700 font-medium">Batch Size</td>
+<td class="px-6 py-4 text-center bg-indigo-50">
+<div class="flex items-center justify-center gap-2">
+<span>Limited to 30 students per batch</span>
+<div class="w-5 h-5 flex items-center justify-center text-green-500">
+<i class="ri-check-line"></i>
+</div>
+</div>
+</td>
+<td class="px-6 py-4 text-center text-gray-600">Often 50+ students per batch</td>
+</tr>
+<tr class="border-b border-gray-200">
+<td class="px-6 py-4 text-gray-700 font-medium">Study Material</td>
+<td class="px-6 py-4 text-center bg-indigo-50">
+<div class="flex items-center justify-center gap-2">
+<span>Regularly updated, exam-oriented with practice questions</span>
+<div class="w-5 h-5 flex items-center justify-center text-green-500">
+<i class="ri-check-line"></i>
+</div>
+</div>
+</td>
+<td class="px-6 py-4 text-center text-gray-600">Generic content with less frequent updates</td>
+</tr>
+<tr>
+<td class="px-6 py-4 text-gray-700 font-medium">Success Rate</td>
+<td class="px-6 py-4 text-center bg-indigo-50">
+<div class="flex items-center justify-center gap-2">
+<span>85% students achieve their target scores</span>
+<div class="w-5 h-5 flex items-center justify-center text-green-500">
+<i class="ri-check-line"></i>
+</div>
+</div>
+</td>
+<td class="px-6 py-4 text-center text-gray-600">Typically ranges from 40-60%</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<!-- Faculty Profiles -->
+<section id="faculty" class="py-16 bg-gray-50">
+<div class="container mx-auto px-4">
+<div class="text-center max-w-3xl mx-auto mb-12">
+<h2 class="text-3xl font-bold text-gray-900 mb-4">Meet Our Expert Faculty</h2>
+<p class="text-lg text-gray-600">Learn from India's finest educators with proven track records of student success</p>
+</div>
+<div class="relative">
+<div class="flex overflow-x-auto pb-8 gap-6 hide-scrollbar">
+<!-- Faculty 1 -->
+<div class="glass-card rounded-lg p-6 min-w-[300px] max-w-[300px]">
+<div class="w-24 h-24 rounded-full bg-indigo-100 mx-auto mb-4 overflow-hidden">
+<div class="w-full h-full flex items-center justify-center text-primary">
+<i class="ri-user-3-fill ri-3x"></i>
+</div>
+</div>
+<div class="text-center">
+<h3 class="text-xl font-semibold text-gray-900 mb-1">Dr. Rajesh Sharma</h3>
+<p class="text-primary font-medium mb-2">Physics Expert</p>
+<p class="text-gray-600 text-sm mb-3">Ph.D. in Physics with 15+ years of teaching experience</p>
+<div class="flex justify-center gap-1 mb-4">
+<div class="w-4 h-4 flex items-center justify-center text-yellow-500">
+<i class="ri-star-fill"></i>
+</div>
+<div class="w-4 h-4 flex items-center justify-center text-yellow-500">
+<i class="ri-star-fill"></i>
+</div>
+<div class="w-4 h-4 flex items-center justify-center text-yellow-500">
+<i class="ri-star-fill"></i>
+</div>
+<div class="w-4 h-4 flex items-center justify-center text-yellow-500">
+<i class="ri-star-fill"></i>
+</div>
+<div class="w-4 h-4 flex items-center justify-center text-yellow-500">
+<i class="ri-star-fill"></i>
+</div>
+</div>
+<p class="text-sm text-gray-600 italic">"Simplifying complex physics concepts is my passion. I believe in building strong fundamentals."</p>
+</div>
+</div>
+<!-- Faculty 2 -->
+<div class="glass-card rounded-lg p-6 min-w-[300px] max-w-[300px]">
+<div class="w-24 h-24 rounded-full bg-indigo-100 mx-auto mb-4 overflow-hidden">
+<div class="w-full h-full flex items-center justify-center text-primary">
+<i class="ri-user-3-fill ri-3x"></i>
+</div>
+</div>
+<div class="text-center">
+<h3 class="text-xl font-semibold text-gray-900 mb-1">Dr. Priya Verma</h3>
+<p class="text-primary font-medium mb-2">Biology Expert</p>
+<p class="text-gray-600 text-sm mb-3">M.D. with specialization in Medical Sciences, 12+ years experience</p>
+<div class="flex justify-center gap-1 mb-4">
+<div class="w-4 h-4 flex items-center justify-center text-yellow-500">
+<i class="ri-star-fill"></i>
+</div>
+<div class="w-4 h-4 flex items-center justify-center text-yellow-500">
+<i class="ri-star-fill"></i>
+</div>
+<div class="w-4 h-4 flex items-center justify-center text-yellow-500">
+<i class="ri-star-fill"></i>
+</div>
+<div class="w-4 h-4 flex items-center justify-center text-yellow-500">
+<i class="ri-star-fill"></i>
+</div>
+<div class="w-4 h-4 flex items-center justify-center text-yellow-500">
+<i class="ri-star-fill"></i>
+</div>
+</div>
+<p class="text-sm text-gray-600 italic">"Biology is not just about memorization but understanding the 'why' behind every concept."</p>
+</div>
+</div>
+<!-- Faculty 3 -->
+<div class="glass-card rounded-lg p-6 min-w-[300px] max-w-[300px]">
+<div class="w-24 h-24 rounded-full bg-indigo-100 mx-auto mb-4 overflow-hidden">
+<div class="w-full h-full flex items-center justify-center text-primary">
+<i class="ri-user-3-fill ri-3x"></i>
+</div>
+</div>
+<div class="text-center">
+<h3 class="text-xl font-semibold text-gray-900 mb-1">Prof. Amit Patel</h3>
+<p class="text-primary font-medium mb-2">Chemistry Expert</p>
+<p class="text-gray-600 text-sm mb-3">M.Sc. in Organic Chemistry, Former IIT Professor, 18+ years experience</p>
+<div class="flex justify-center gap-1 mb-4">
+<div class="w-4 h-4 flex items-center justify-center text-yellow-500">
+<i class="ri-star-fill"></i>
+</div>
+<div class="w-4 h-4 flex items-center justify-center text-yellow-500">
+<i class="ri-star-fill"></i>
+</div>
+<div class="w-4 h-4 flex items-center justify-center text-yellow-500">
+<i class="ri-star-fill"></i>
+</div>
+<div class="w-4 h-4 flex items-center justify-center text-yellow-500">
+<i class="ri-star-fill"></i>
+</div>
+<div class="w-4 h-4 flex items-center justify-center text-yellow-500">
+<i class="ri-star-fill"></i>
+</div>
+</div>
+<p class="text-sm text-gray-600 italic">"Chemistry is logical, not magical. My approach focuses on understanding reactions rather than memorizing them."</p>
+</div>
+</div>
+<!-- Faculty 4 -->
+<div class="glass-card rounded-lg p-6 min-w-[300px] max-w-[300px]">
+<div class="w-24 h-24 rounded-full bg-indigo-100 mx-auto mb-4 overflow-hidden">
+<div class="w-full h-full flex items-center justify-center text-primary">
+<i class="ri-user-3-fill ri-3x"></i>
+</div>
+</div>
+<div class="text-center">
+<h3 class="text-xl font-semibold text-gray-900 mb-1">Dr. Sanjay Gupta</h3>
+<p class="text-primary font-medium mb-2">Mathematics Expert</p>
+<p class="text-gray-600 text-sm mb-3">Ph.D. in Applied Mathematics, 14+ years of teaching experience</p>
+<div class="flex justify-center gap-1 mb-4">
+<div class="w-4 h-4 flex items-center justify-center text-yellow-500">
+<i class="ri-star-fill"></i>
+</div>
+<div class="w-4 h-4 flex items-center justify-center text-yellow-500">
+<i class="ri-star-fill"></i>
+</div>
+<div class="w-4 h-4 flex items-center justify-center text-yellow-500">
+<i class="ri-star-fill"></i>
+</div>
+<div class="w-4 h-4 flex items-center justify-center text-yellow-500">
+<i class="ri-star-fill"></i>
+</div>
+<div class="w-4 h-4 flex items-center justify-center text-yellow-500">
+<i class="ri-star-fill"></i>
+</div>
+</div>
+<p class="text-sm text-gray-600 italic">"Mathematics is about patterns and problem-solving strategies, not just formulas and calculations."</p>
+</div>
+</div>
+</div>
+<button class="absolute left-0 top-1/2 transform -translate-y-1/2 w-10 h-10 bg-white rounded-full shadow-lg flex items-center justify-center text-gray-700 hover:bg-gray-100 z-10 -ml-5 hidden md:flex">
+<i class="ri-arrow-left-s-line"></i>
+</button>
+<button class="absolute right-0 top-1/2 transform -translate-y-1/2 w-10 h-10 bg-white rounded-full shadow-lg flex items-center justify-center text-gray-700 hover:bg-gray-100 z-10 -mr-5 hidden md:flex">
+<i class="ri-arrow-right-s-line"></i>
+</button>
+</div>
+<div class="text-center mt-8">
+<a href="#" class="inline-flex items-center text-primary font-medium">
+View all faculty members
+<div class="w-5 h-5 flex items-center justify-center ml-1">
+<i class="ri-arrow-right-line"></i>
+</div>
+</a>
+</div>
+</div>
+</section>
+<!-- Study Resources -->
+<section id="resources" class="py-16 bg-white">
+<div class="container mx-auto px-4">
+<div class="text-center max-w-3xl mx-auto mb-12">
+<h2 class="text-3xl font-bold text-gray-900 mb-4">Comprehensive Study Resources</h2>
+<p class="text-lg text-gray-600">Access a wide range of learning materials designed to enhance your preparation</p>
+</div>
+<div class="max-w-4xl mx-auto">
+<div class="flex border-b border-gray-200 mb-8">
+<button class="px-6 py-3 font-medium text-primary border-b-2 border-primary tab-active">Study Materials</button>
+<button class="px-6 py-3 font-medium text-gray-600 hover:text-gray-900">Practice Tests</button>
+<button class="px-6 py-3 font-medium text-gray-600 hover:text-gray-900">Video Lectures</button>
+<button class="px-6 py-3 font-medium text-gray-600 hover:text-gray-900">Previous Papers</button>
+</div>
+<div class="grid md:grid-cols-2 gap-6">
+<!-- Resource 1 -->
+<div class="glass-card rounded-lg p-6 flex">
+<div class="w-16 h-16 flex items-center justify-center bg-indigo-100 rounded-lg text-primary mr-4 flex-shrink-0">
+<i class="ri-book-2-line ri-2x"></i>
+</div>
+<div>
+<h3 class="text-lg font-semibold text-gray-900 mb-1">NEET Biology Complete Notes</h3>
+<p class="text-gray-600 text-sm mb-3">Comprehensive notes covering all NEET Biology topics with diagrams and mnemonics</p>
+<a href="#" class="inline-flex items-center text-primary text-sm font-medium">
+Download PDF
+<div class="w-4 h-4 flex items-center justify-center ml-1">
+<i class="ri-download-line"></i>
+</div>
+</a>
+</div>
+</div>
+<!-- Resource 2 -->
+<div class="glass-card rounded-lg p-6 flex">
+<div class="w-16 h-16 flex items-center justify-center bg-indigo-100 rounded-lg text-primary mr-4 flex-shrink-0">
+<i class="ri-book-2-line ri-2x"></i>
+</div>
+<div>
+<h3 class="text-lg font-semibold text-gray-900 mb-1">JEE Physics Formula Handbook</h3>
+<p class="text-gray-600 text-sm mb-3">Quick reference guide with all important formulas and their applications</p>
+<a href="#" class="inline-flex items-center text-primary text-sm font-medium">
+Download PDF
+<div class="w-4 h-4 flex items-center justify-center ml-1">
+<i class="ri-download-line"></i>
+</div>
+</a>
+</div>
+</div>
+<!-- Resource 3 -->
+<div class="glass-card rounded-lg p-6 flex">
+<div class="w-16 h-16 flex items-center justify-center bg-indigo-100 rounded-lg text-primary mr-4 flex-shrink-0">
+<i class="ri-book-2-line ri-2x"></i>
+</div>
+<div>
+<h3 class="text-lg font-semibold text-gray-900 mb-1">Chemistry Reaction Mechanisms</h3>
+<p class="text-gray-600 text-sm mb-3">Detailed guide to organic and inorganic reaction mechanisms with examples</p>
+<a href="#" class="inline-flex items-center text-primary text-sm font-medium">
+Download PDF
+<div class="w-4 h-4 flex items-center justify-center ml-1">
+<i class="ri-download-line"></i>
+</div>
+</a>
+</div>
+</div>
+<!-- Resource 4 -->
+<div class="glass-card rounded-lg p-6 flex">
+<div class="w-16 h-16 flex items-center justify-center bg-indigo-100 rounded-lg text-primary mr-4 flex-shrink-0">
+<i class="ri-book-2-line ri-2x"></i>
+</div>
+<div>
+<h3 class="text-lg font-semibold text-gray-900 mb-1">Mathematics Problem Solving</h3>
+<p class="text-gray-600 text-sm mb-3">Advanced techniques for solving complex mathematical problems with step-by-step solutions</p>
+<a href="#" class="inline-flex items-center text-primary text-sm font-medium">
+Download PDF
+<div class="w-4 h-4 flex items-center justify-center ml-1">
+<i class="ri-download-line"></i>
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="text-center mt-10">
+<a href="https://readdy.ai/home/77e26a66-d421-464c-b32c-eeb07cb950c6/1fff5021-dade-4854-9767-1913eba755ee" data-readdy="true" class="px-6 py-3 bg-primary text-white rounded-button hover:bg-indigo-600 transition duration-300 font-medium whitespace-nowrap">Access All Resources</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Success Stories -->
+<section class="py-16 bg-gray-50">
+<div class="container mx-auto px-4">
+<div class="text-center max-w-3xl mx-auto mb-12">
+<h2 class="text-3xl font-bold text-gray-900 mb-4">Student Success Stories</h2>
+<p class="text-lg text-gray-600">Hear from our students who achieved their dreams with our guidance</p>
+</div>
+<div class="grid md:grid-cols-3 gap-6 mb-12">
+<!-- Success Story 1 -->
+<div class="glass-card rounded-lg overflow-hidden">
+<div class="h-48 bg-indigo-50 flex items-center justify-center">
+<div class="w-16 h-16 flex items-center justify-center">
+<i class="ri-play-circle-line ri-3x text-primary"></i>
+</div>
+</div>
+<div class="p-6">
+<div class="flex items-center mb-4">
+<div class="w-12 h-12 rounded-full bg-indigo-100 mr-3 flex items-center justify-center text-primary">
+<i class="ri-user-3-fill"></i>
+</div>
+<div>
+<h3 class="text-lg font-semibold text-gray-900">Ananya Mehta</h3>
+<p class="text-primary text-sm">NEET AIR 45, 2024</p>
+</div>
+</div>
+<p class="text-gray-600 mb-4">"The structured approach and personal mentoring at Exams Cracker helped me secure a top rank in NEET. The faculty's guidance was invaluable."</p>
+<div class="flex items-center text-sm text-gray-500">
+<div class="w-4 h-4 flex items-center justify-center mr-1">
+<i class="ri-time-line"></i>
+</div>
+<span>2 months ago</span>
+</div>
+</div>
+</div>
+<!-- Success Story 2 -->
+<div class="glass-card rounded-lg overflow-hidden">
+<div class="h-48 bg-indigo-50 flex items-center justify-center">
+<div class="w-16 h-16 flex items-center justify-center">
+<i class="ri-play-circle-line ri-3x text-primary"></i>
+</div>
+</div>
+<div class="p-6">
+<div class="flex items-center mb-4">
+<div class="w-12 h-12 rounded-full bg-indigo-100 mr-3 flex items-center justify-center text-primary">
+<i class="ri-user-3-fill"></i>
+</div>
+<div>
+<h3 class="text-lg font-semibold text-gray-900">Rahul Singh</h3>
+<p class="text-primary text-sm">JEE Advanced AIR 120, 2024</p>
+</div>
+</div>
+<p class="text-gray-600 mb-4">"The problem-solving techniques and regular mock tests at Exams Cracker were key to my JEE success. I'm now studying at IIT Bombay."</p>
+<div class="flex items-center text-sm text-gray-500">
+<div class="w-4 h-4 flex items-center justify-center mr-1">
+<i class="ri-time-line"></i>
+</div>
+<span>3 months ago</span>
+</div>
+</div>
+</div>
+<!-- Success Story 3 -->
+<div class="glass-card rounded-lg overflow-hidden">
+<div class="h-48 bg-indigo-50 flex items-center justify-center">
+<div class="w-16 h-16 flex items-center justify-center">
+<i class="ri-play-circle-line ri-3x text-primary"></i>
+</div>
+</div>
+<div class="p-6">
+<div class="flex items-center mb-4">
+<div class="w-12 h-12 rounded-full bg-indigo-100 mr-3 flex items-center justify-center text-primary">
+<i class="ri-user-3-fill"></i>
+</div>
+<div>
+<h3 class="text-lg font-semibold text-gray-900">Priya Desai</h3>
+<p class="text-primary text-sm">UPSC CSE AIR 78, 2023</p>
+</div>
+</div>
+<p class="text-gray-600 mb-4">"The comprehensive study material and current affairs sessions at Exams Cracker were crucial for my UPSC preparation. Forever grateful!"</p>
+<div class="flex items-center text-sm text-gray-500">
+<div class="w-4 h-4 flex items-center justify-center mr-1">
+<i class="ri-time-line"></i>
+</div>
+<span>5 months ago</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Rank Holders Wall -->
+<div class="glass-card rounded-lg p-8 mb-12">
+<h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">Our Rank Holders</h3>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+<div class="text-center">
+<div class="text-4xl font-bold text-primary mb-2">150+</div>
+<p class="text-gray-700">NEET Top 1000 Ranks</p>
+</div>
+<div class="text-center">
+<div class="text-4xl font-bold text-primary mb-2">120+</div>
+<p class="text-gray-700">JEE Advanced Top 1000</p>
+</div>
+<div class="text-center">
+<div class="text-4xl font-bold text-primary mb-2">45+</div>
+<p class="text-gray-700">UPSC Selections</p>
+</div>
+<div class="text-center">
+<div class="text-4xl font-bold text-primary mb-2">500+</div>
+<p class="text-gray-700">State Board Toppers</p>
+</div>
+</div>
+</div>
+<div class="text-center">
+<a href="#" class="inline-flex items-center text-primary font-medium">
+View more success stories
+<div class="w-5 h-5 flex items-center justify-center ml-1">
+<i class="ri-arrow-right-line"></i>
+</div>
+</a>
+</div>
+</div>
+</section>
+<!-- FAQ Section -->
+<section class="py-16 bg-white">
+<div class="container mx-auto px-4">
+<div class="text-center max-w-3xl mx-auto mb-12">
+<h2 class="text-3xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
+<p class="text-lg text-gray-600">Find answers to common questions about our programs and admission process</p>
+</div>
+<div class="max-w-3xl mx-auto">
+<div class="glass-card rounded-lg overflow-hidden mb-8">
+<div class="p-4 border-b border-gray-200 flex justify-between items-center bg-gray-50">
+<div class="font-medium text-gray-700">About Our Programs</div>
+<div class="flex gap-2">
+<button class="px-3 py-1 bg-primary text-white text-sm rounded-full">All</button>
+<button class="px-3 py-1 bg-gray-200 text-gray-700 text-sm rounded-full">Admissions</button>
+<button class="px-3 py-1 bg-gray-200 text-gray-700 text-sm rounded-full">Courses</button>
+<button class="px-3 py-1 bg-gray-200 text-gray-700 text-sm rounded-full">Fees</button>
+</div>
+</div>
+<!-- FAQ Item 1 -->
+<div class="border-b border-gray-200">
+<div class="p-4 flex justify-between items-center cursor-pointer faq-accordion-header">
+<h3 class="font-medium text-gray-900">What is the admission process for Exams Cracker?</h3>
+<div class="w-6 h-6 flex items-center justify-center text-gray-500 faq-accordion-icon">
+<i class="ri-arrow-down-s-line"></i>
+</div>
+</div>
+<div class="px-4 pb-4 text-gray-600 faq-accordion-content">
+<p>The admission process involves a simple three-step procedure:</p>
+<ol class="list-decimal pl-5 mt-2 space-y-1">
+<li>Fill out the application form online or at our center</li>
+<li>Take our diagnostic assessment test to evaluate your current level</li>
+<li>Attend a counseling session where we recommend the most suitable program</li>
+</ol>
+<p class="mt-2">The entire process can be completed within a day, and you can start classes immediately after enrollment.</p>
+</div>
+</div>
+<!-- FAQ Item 2 -->
+<div class="border-b border-gray-200">
+<div class="p-4 flex justify-between items-center cursor-pointer faq-accordion-header">
+<h3 class="font-medium text-gray-900">What are the batch sizes for different courses?</h3>
+<div class="w-6 h-6 flex items-center justify-center text-gray-500 faq-accordion-icon">
+<i class="ri-arrow-down-s-line"></i>
+</div>
+</div>
+<div class="px-4 pb-4 text-gray-600 faq-accordion-content">
+<p>We maintain limited batch sizes to ensure personalized attention:</p>
+<ul class="list-disc pl-5 mt-2 space-y-1">
+<li>School programs (6-12th): Maximum 25 students per batch</li>
+<li>NEET & JEE programs: Maximum 30 students per batch</li>
+<li>Services exam programs: Maximum 35 students per batch</li>
+<li>Doubt clearing sessions: Maximum 15 students per session</li>
+</ul>
+<p class="mt-2">Our small batch sizes ensure that each student receives adequate attention from faculty.</p>
+</div>
+</div>
+<!-- FAQ Item 3 -->
+<div class="border-b border-gray-200">
+<div class="p-4 flex justify-between items-center cursor-pointer faq-accordion-header">
+<h3 class="font-medium text-gray-900">What is the fee structure for different courses?</h3>
+<div class="w-6 h-6 flex items-center justify-center text-gray-500 faq-accordion-icon">
+<i class="ri-arrow-down-s-line"></i>
+</div>
+</div>
+<div class="px-4 pb-4 text-gray-600 faq-accordion-content">
+<p>Our fee structure varies based on the program and duration:</p>
+<ul class="list-disc pl-5 mt-2 space-y-1">
+<li>School programs: ₹45,000 - ₹75,000 per year</li>
+<li>NEET & JEE programs: ₹85,000 - ₹1,25,000 per year</li>
+<li>Services exam programs: ₹75,000 - ₹1,10,000 per year</li>
+<li>Crash courses: ₹25,000 - ₹45,000 for 3 months</li>
+</ul>
+<p class="mt-2">We offer scholarships based on merit and financial need. Installment options are also available.</p>
+</div>
+</div>
+<!-- FAQ Item 4 -->
+<div class="border-b border-gray-200">
+<div class="p-4 flex justify-between items-center cursor-pointer faq-accordion-header">
+<h3 class="font-medium text-gray-900">How are the online classes conducted?</h3>
+<div class="w-6 h-6 flex items-center justify-center text-gray-500 faq-accordion-icon">
+<i class="ri-arrow-down-s-line"></i>
+</div>
+</div>
+<div class="px-4 pb-4 text-gray-600 faq-accordion-content">
+<p>Our online classes are conducted through our proprietary learning platform that offers:</p>
+<ul class="list-disc pl-5 mt-2 space-y-1">
+<li>Live interactive sessions with real-time doubt solving</li>
+<li>Recorded sessions for revision</li>
+<li>Digital study materials and resources</li>
+<li>Online tests and assessments</li>
+<li>One-on-one mentoring sessions</li>
+</ul>
+<p class="mt-2">Students need a stable internet connection and a laptop/tablet for the best learning experience.</p>
+</div>
+</div>
+<!-- FAQ Item 5 -->
+<div>
+<div class="p-4 flex justify-between items-center cursor-pointer faq-accordion-header">
+<h3 class="font-medium text-gray-900">Do you provide study materials or do students need to purchase them separately?</h3>
+<div class="w-6 h-6 flex items-center justify-center text-gray-500 faq-accordion-icon">
+<i class="ri-arrow-down-s-line"></i>
+</div>
+</div>
+<div class="px-4 pb-4 text-gray-600 faq-accordion-content">
+<p>All study materials are included in the course fee, including:</p>
+<ul class="list-disc pl-5 mt-2 space-y-1">
+<li>Comprehensive textbooks and workbooks</li>
+<li>Practice question banks</li>
+<li>Previous year question papers with solutions</li>
+<li>Formula sheets and quick reference guides</li>
+<li>Online resources and digital content</li>
+</ul>
+<p class="mt-2">Students do not need to purchase any additional study materials. Everything required for the course is provided by us.</p>
+</div>
+</div>
+</div>
+<div class="text-center">
+<p class="text-gray-600 mb-4">Still have questions? We're here to help!</p>
+<a href="#" class="px-6 py-3 bg-primary text-white rounded-button hover:bg-indigo-600 transition duration-300 font-medium whitespace-nowrap">Contact Our Support Team</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Call-to-Action Section -->
+<section id="counseling" class="py-16 bg-indigo-50">
+<div class="container mx-auto px-4">
+<div class="glass-card rounded-lg overflow-hidden">
+<div class="grid md:grid-cols-2 gap-0">
+<div class="p-8 md:p-12">
+<h2 class="text-3xl font-bold text-gray-900 mb-4">Start Your Success Journey Today</h2>
+<p class="text-lg text-gray-600 mb-8">Take the first step towards academic excellence. Book a free counseling session or register for a demo class.</p>
+<form class="space-y-4">
+<div>
+<label class="block text-gray-700 text-sm font-medium mb-2">Full Name</label>
+<input type="text" class="w-full px-4 py-2 border border-gray-300 rounded focus:border-primary" placeholder="Enter your full name">
+</div>
+<div>
+<label class="block text-gray-700 text-sm font-medium mb-2">Phone Number</label>
+<input type="tel" class="w-full px-4 py-2 border border-gray-300 rounded focus:border-primary" placeholder="Enter your phone number">
+</div>
+<div>
+<label class="block text-gray-700 text-sm font-medium mb-2">Email Address</label>
+<input type="email" class="w-full px-4 py-2 border border-gray-300 rounded focus:border-primary" placeholder="Enter your email address">
+</div>
+<div>
+<label class="block text-gray-700 text-sm font-medium mb-2">Interested In</label>
+<div class="relative">
+<select class="w-full px-4 py-2 border border-gray-300 rounded appearance-none focus:border-primary pr-8">
+<option>Select a course</option>
+<option>School Education (6-10th)</option>
+<option>School Education (11-12th)</option>
+<option>NEET Preparation</option>
+<option>JEE Preparation</option>
+<option>Services Exam Preparation</option>
+</select>
+<div class="absolute right-3 top-1/2 transform -translate-y-1/2 pointer-events-none w-4 h-4 flex items-center justify-center text-gray-500">
+<i class="ri-arrow-down-s-line"></i>
+</div>
+</div>
+</div>
+<div>
+<label class="block text-gray-700 text-sm font-medium mb-2">Preferred Mode</label>
+<div class="flex gap-4">
+<label class="flex items-center">
+<input type="radio" name="mode" class="w-4 h-4 text-primary border-gray-300 focus:ring-primary" checked>
+<span class="ml-2 text-gray-700">Online</span>
+</label>
+<label class="flex items-center">
+<input type="radio" name="mode" class="w-4 h-4 text-primary border-gray-300 focus:ring-primary">
+<span class="ml-2 text-gray-700">Offline</span>
+</label>
+<label class="flex items-center">
+<input type="radio" name="mode" class="w-4 h-4 text-primary border-gray-300 focus:ring-primary">
+<span class="ml-2 text-gray-700">Both</span>
+</label>
+</div>
+</div>
+<div class="flex gap-4">
+<button type="submit" class="px-6 py-3 bg-primary text-white rounded-button hover:bg-indigo-600 transition duration-300 font-medium whitespace-nowrap">Book Free Counseling</button>
+<button type="submit" id="trial" class="px-6 py-3 border border-primary text-primary rounded-button hover:bg-primary hover:text-white transition duration-300 font-medium whitespace-nowrap">Register for Demo Class</button>
+</div>
+</form>
+</div>
+<div style="background-image: url('https://readdy.ai/api/search-image?query=A%20modern%20educational%20counseling%20session%20with%20Indian%20students%20and%20teachers%20in%20a%20glass-walled%20office%2C%20professional%20setting%2C%20educational%20posters%20on%20wall%2C%20digital%20screens%20showing%20educational%20content%2C%20bright%20and%20airy%20space&width=800&height=1000&seq=2&orientation=portrait'); background-size: cover; background-position: center;" class="min-h-[400px]"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-gray-900 text-white pt-16 pb-8">
+<div class="container mx-auto px-4">
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+<div>
+<a href="#" class="text-2xl font-['Pacifico'] text-white mb-6 block">Exams Cracker</a>
+<p class="text-gray-400 mb-6">India's leading coaching institute for NEET, JEE, and Services exams preparation with a proven track record of success.</p>
+<div class="flex gap-4">
+<a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition">
+<i class="ri-facebook-fill"></i>
+</a>
+<a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition">
+<i class="ri-instagram-line"></i>
+</a>
+<a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition">
+<i class="ri-youtube-line"></i>
+</a>
+<a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition">
+<i class="ri-linkedin-fill"></i>
+</a>
+</div>
+</div>
+<div>
+<h3 class="text-lg font-semibold mb-6">Quick Links</h3>
+<ul class="space-y-3">
+<li><a href="#" class="text-gray-400 hover:text-white transition">About Us</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition">Courses</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition">Faculty</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition">Results</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition">Study Resources</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition">Contact Us</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-lg font-semibold mb-6">Contact Information</h3>
+<ul class="space-y-3">
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-gray-400 mr-3 mt-1">
+<i class="ri-map-pin-line"></i>
+</div>
+<span class="text-gray-400">123 Education Hub, Sector 18, Noida, Uttar Pradesh 201301</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-gray-400 mr-3 mt-1">
+<i class="ri-phone-line"></i>
+</div>
+<span class="text-gray-400">+91 9876543210</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-gray-400 mr-3 mt-1">
+<i class="ri-mail-line"></i>
+</div>
+<span class="text-gray-400">info@examscracker.com</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-gray-400 mr-3 mt-1">
+<i class="ri-time-line"></i>
+</div>
+<span class="text-gray-400">Mon-Sat: 9:00 AM - 7:00 PM</span>
+</li>
+</ul>
+</div>
+<div>
+<h3 class="text-lg font-semibold mb-6">Newsletter</h3>
+<p class="text-gray-400 mb-4">Subscribe to our newsletter for the latest updates on courses, exams, and educational tips.</p>
+<form class="mb-4">
+<div class="flex">
+<input type="email" placeholder="Your email address" class="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-l text-white focus:outline-none focus:border-primary">
+<button type="submit" class="bg-primary px-4 py-2 rounded-r hover:bg-indigo-600 transition whitespace-nowrap">Subscribe</button>
+</div>
+</form>
+<div class="flex flex-wrap gap-2">
+<div class="w-8 h-8 flex items-center justify-center">
+<i class="ri-visa-line ri-lg"></i>
+</div>
+<div class="w-8 h-8 flex items-center justify-center">
+<i class="ri-mastercard-line ri-lg"></i>
+</div>
+<div class="w-8 h-8 flex items-center justify-center">
+<i class="ri-paypal-line ri-lg"></i>
+</div>
+<div class="w-8 h-8 flex items-center justify-center">
+<i class="ri-google-pay-line ri-lg"></i>
+</div>
+<div class="w-8 h-8 flex items-center justify-center">
+<i class="ri-amazon-pay-line ri-lg"></i>
+</div>
+</div>
+</div>
+</div>
+<div class="border-t border-gray-800 pt-8">
+<div class="flex flex-col md:flex-row justify-between items-center">
+<p class="text-gray-400 text-sm mb-4 md:mb-0">© 2025 Exams Cracker. All rights reserved.</p>
+<div class="flex gap-4 text-sm text-gray-400">
+<a href="#" class="hover:text-white transition">Privacy Policy</a>
+<a href="#" class="hover:text-white transition">Terms of Service</a>
+<a href="#" class="hover:text-white transition">Refund Policy</a>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<!-- Floating Elements -->
+<div class="fixed bottom-6 right-6 z-40 flex flex-col gap-4">
+<a href="https://wa.me/919876543210" class="w-14 h-14 bg-green-500 rounded-full flex items-center justify-center text-white shadow-lg hover:bg-green-600 transition">
+<i class="ri-whatsapp-line ri-xl"></i>
+</a>
+<button id="back-to-top" class="w-12 h-12 bg-gray-800 bg-opacity-80 rounded-full flex items-center justify-center text-white shadow-lg hover:bg-gray-700 transition">
+<i class="ri-arrow-up-line"></i>
+</button>
+</div>
+<!-- Cookie Consent Banner -->
+<div id="cookie-banner" class="fixed bottom-0 left-0 right-0 bg-white shadow-lg p-4 z-50 flex justify-between items-center">
+<p class="text-gray-700 text-sm mr-4">We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies.</p>
+<div class="flex gap-2">
+<button id="accept-cookies" class="px-4 py-2 bg-primary text-white text-sm rounded-button hover:bg-indigo-600 transition whitespace-nowrap">Accept</button>
+<button id="decline-cookies" class="px-4 py-2 border border-gray-300 text-gray-700 text-sm rounded-button hover:bg-gray-100 transition whitespace-nowrap">Decline</button>
+</div>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+// Course filtering functionality
+const allCoursesBtn = document.getElementById('all-courses-btn');
+const onlineCoursesBtn = document.getElementById('online-courses-btn');
+const offlineCoursesBtn = document.getElementById('offline-courses-btn');
+const coursesGrid = document.getElementById('courses-grid');
+// Add data-mode attribute to course cards
+const courseCards = coursesGrid.children;
+Array.from(courseCards).forEach((card, index) => {
+// Simulate some courses being online and others offline
+const mode = index % 2 === 0 ? 'online' : 'offline';
+card.setAttribute('data-mode', mode);
+// Add online badge if it's an online course
+if (mode === 'online') {
+const badge = document.createElement('span');
+badge.className = 'px-2 py-1 bg-green-100 text-green-800 text-xs font-medium rounded absolute top-4 right-4';
+badge.textContent = 'Online';
+card.querySelector('.glass-card').style.position = 'relative';
+card.querySelector('.glass-card').appendChild(badge);
+}
+});
+function updateActiveButton(activeBtn) {
+[allCoursesBtn, onlineCoursesBtn, offlineCoursesBtn].forEach(btn => {
+btn.classList.remove('bg-primary', 'text-white');
+btn.classList.add('text-gray-700');
+});
+activeBtn.classList.remove('text-gray-700');
+activeBtn.classList.add('bg-primary', 'text-white');
+}
+function filterCourses(mode) {
+Array.from(courseCards).forEach(card => {
+if (mode === 'all' || card.getAttribute('data-mode') === mode) {
+card.style.display = 'block';
+} else {
+card.style.display = 'none';
+}
+});
+}
+allCoursesBtn.addEventListener('click', () => {
+updateActiveButton(allCoursesBtn);
+filterCourses('all');
+});
+onlineCoursesBtn.addEventListener('click', () => {
+updateActiveButton(onlineCoursesBtn);
+filterCourses('online');
+});
+offlineCoursesBtn.addEventListener('click', () => {
+updateActiveButton(offlineCoursesBtn);
+filterCourses('offline');
+});
+// Back to top button
+const backToTopButton = document.getElementById('back-to-top');
+if (backToTopButton) {
+backToTopButton.addEventListener('click', function() {
+window.scrollTo({
+top: 0,
+behavior: 'smooth'
+});
+});
+window.addEventListener('scroll', function() {
+if (window.scrollY > 300) {
+backToTopButton.classList.remove('hidden');
+} else {
+backToTopButton.classList.add('hidden');
+}
+});
+}
+// Cookie banner
+const cookieBanner = document.getElementById('cookie-banner');
+const acceptCookies = document.getElementById('accept-cookies');
+const declineCookies = document.getElementById('decline-cookies');
+if (cookieBanner && acceptCookies && declineCookies) {
+if (!localStorage.getItem('cookieConsent')) {
+cookieBanner.style.display = 'flex';
+} else {
+cookieBanner.style.display = 'none';
+}
+acceptCookies.addEventListener('click', function() {
+localStorage.setItem('cookieConsent', 'accepted');
+cookieBanner.style.display = 'none';
+});
+declineCookies.addEventListener('click', function() {
+localStorage.setItem('cookieConsent', 'declined');
+cookieBanner.style.display = 'none';
+});
+}
+});
+document.addEventListener('DOMContentLoaded', function() {
+// FAQ Accordion
+const faqHeaders = document.querySelectorAll('.faq-accordion-header');
+faqHeaders.forEach(header => {
+header.addEventListener('click', function() {
+const content = this.nextElementSibling;
+const icon = this.querySelector('.faq-accordion-icon');
+content.classList.toggle('active');
+icon.classList.toggle('active');
+if (content.classList.contains('active')) {
+content.style.maxHeight = content.scrollHeight + 'px';
+} else {
+content.style.maxHeight = '0';
+}
+});
+});
+});
+</script>
+</body>
+</html>
